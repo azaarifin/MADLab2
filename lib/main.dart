@@ -31,13 +31,9 @@ class Lab02HomePage extends StatefulWidget {
 
 class _Lab02HomePageState extends State<Lab02HomePage> {
   DateTime _selectedDate = DateTime.now();
-  String _selectedRole = 'Gryffindor';
+  String _selectedRole = 'Student';
 
   final List<String> _roles = const [
-    'Gryffindor',
-    'Slytherin',
-    'Ravenclaw',
-    'Hufflepuff',
     'Student',
     'Developer',
     'Designer',
@@ -164,7 +160,7 @@ class _Lab02HomePageState extends State<Lab02HomePage> {
         const SizedBox(height: 16),
         const LocationCard(),
         const SizedBox(height: 16),
-        const ImageSection(imagePath: 'assets/images/lake.jpg'),
+        const ImageSection(imagePath: 'assets/images/HoutongCatVillage.jpeg'),
         const SizedBox(height: 16),
         _buildPickersCard(),
       ],
@@ -190,7 +186,7 @@ class _Lab02HomePageState extends State<Lab02HomePage> {
             children: [
               const LocationCard(),
               const SizedBox(height: 16),
-              const ImageSection(imagePath: 'assets/images/lake.jpg'),
+              const ImageSection(imagePath: 'assets/images/HoutongCatVillage.jpg'),
               const SizedBox(height: 16),
               _buildPickersCard(),
             ],
@@ -354,8 +350,8 @@ class LocationCard extends StatelessWidget {
             ),
           ),
           TitleSection(
-            name: 'Hogwarts School of Witchcraft and Wizardry',
-            location: 'Hogsmeade, Scotland',
+            name: 'Houtong Cat Village',
+            location: '224, Taiwan, New Taipei City, Ruifang District, 龍山里 Fengjia Road',
             starCount: 41,
           ),
         ],
